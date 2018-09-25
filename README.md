@@ -19,7 +19,8 @@ What this includes is:
 2. View of past active instance sessions with their cost
 3. Automatic system hardware detection for determining accurate billing cost
 
-This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed. <b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
+This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed. <br/>
+<b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
 <br/>
 Feel free to let me know changes/additions to be made :)
 <br/>
