@@ -4,9 +4,9 @@
 <br/>
 <b> Current support: </b>
 
-Zones: asia-east-1<br/>
-GPU's: V100, P100, K80 <br/>
-Storage: SSD, Standard provisioned 
+* Zones: asia-east-1<br/>
+* GPU's: V100, P100, K80 <br/>
+* Storage: SSD, Standard provisioned 
 <br/><br/>
 // TODO: other zones, preemptive hardware use. //
 
@@ -19,12 +19,12 @@ What this includes is:
 2. View of past active instance sessions with their cost
 3. Automatic system hardware detection for determining accurate billing cost
 
-This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed.
-
+This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed. <b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
+<br/>
 Feel free to let me know changes/additions to be made :)
-
+<br/>
 ### Install:
-
+```
 1. Add following metadata key to your instance:<br/>
 Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh<br/>
 (where dir-of-file is full working directory of gceshutdown.sh)<br/>
@@ -35,4 +35,4 @@ Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh<br/>
 3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:<br/>
    -v: Verbose mode<br/>
    -r: Remove billing history
-
+```
