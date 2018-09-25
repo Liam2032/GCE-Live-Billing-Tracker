@@ -13,6 +13,7 @@ Storage: SSD, Standard provisioned
 // TODO: other zones, preemptive hardware use. //
 
 
+
 This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
 
 What this includes is:
