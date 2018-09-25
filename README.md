@@ -1,6 +1,13 @@
 ## GCE Billing Tracker
 
-<i> Please note: still a work in progress, updates will come </i>
+<i> Please note: still early work in progress, updating in progress </i>
+<b> Current support: <b>
+Zones: asia-east-1
+GPU's: V100, P100, K80 
+Storage: SSD, Standard provisioned 
+
+// TODO: other zones, preemptive hardware use. //
+
 
 This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
 
