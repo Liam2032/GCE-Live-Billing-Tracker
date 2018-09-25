@@ -1,6 +1,7 @@
 ## GCE Billing Tracker
 
 <i> Please note: still early work in progress, updating in progress </i>
+< br/>
 <b> Current support: </b>
 Zones: asia-east-1
 GPU's: V100, P100, K80 
