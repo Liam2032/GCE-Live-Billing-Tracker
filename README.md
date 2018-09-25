@@ -1,15 +1,13 @@
 ## GCE Billing Tracker
 
 <i> Please note: still early work in progress, updating in progress </i>
-
+<br/>
 <b> Current support: </b>
 
-Zones: asia-east-1
-
-GPU's: V100, P100, K80 
-
+Zones: asia-east-1<br/>
+GPU's: V100, P100, K80 <br/>
 Storage: SSD, Standard provisioned 
-
+<br/><br/>
 // TODO: other zones, preemptive hardware use. //
 
 
