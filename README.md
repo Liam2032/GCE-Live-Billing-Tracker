@@ -32,7 +32,7 @@ Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh
 
 2. Run gcecost.sh script and follow prompts
 
-3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:
-   -v: Verbose mode
+3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:<br/>
+   -v: Verbose mode<br/>
    -r: Remove billing history
 
