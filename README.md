@@ -16,7 +16,8 @@ Feel free to let me know changes/additions to be made :)
 ### Install:
 
 1. Add following metadata key to your instance:
-Key: shutdown-script, Value: sudo /home/sp_emailproject/gceshutdown.sh
+Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh
+(where dir-of-file is full working directory of gceshutdown.sh)
 (information on how to do this here: https://cloud.google.com/compute/docs/shutdownscript)
 2. Run setup.sh (This will create 2 files: one for instance session logging, and one for viewing status
 3. Now, you can use gcecosts in the terminal to get an overview of usage.
