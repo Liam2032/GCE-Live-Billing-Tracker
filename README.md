@@ -3,8 +3,11 @@
 <i> Please note: still early work in progress, updating in progress </i>
 
 <b> Current support: </b>
+
 Zones: asia-east-1
+
 GPU's: V100, P100, K80 
+
 Storage: SSD, Standard provisioned 
 
 // TODO: other zones, preemptive hardware use. //
