@@ -28,13 +28,15 @@ Feel free to let me know changes/additions to be made :)
 ### Install:
 ```
 1. Add following metadata key to your instance:
+
 Key: shutdown-script
 Value: sudo dir-of-file/gceshutdown.sh
+
 (where dir-of-file is full working directory of gceshutdown.sh, information on how to do this here: https://cloud.google.com/compute/docs/shutdownscript)
 
 2. Run gcecost.sh script and follow prompts
 
-3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:<br/>
-   -v: Verbose mode<br/>
+3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:
+   -v: Verbose mode
    -r: Remove billing history
 ```
