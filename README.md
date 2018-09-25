@@ -1,7 +1,7 @@
 ## GCE Billing Tracker
 
 <i> Please note: still early work in progress, updating in progress </i>
-<b> Current support: <b>
+<b> Current support: </b>
 Zones: asia-east-1
 GPU's: V100, P100, K80 
 Storage: SSD, Standard provisioned 
@@ -12,7 +12,7 @@ Storage: SSD, Standard provisioned
 This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
 
 What this includes is:
-1. Live cost tracking of an instance (based on current exchange rate) 
+1. Live cost tracking of an instance (based on current exchange rate of chosen currency) 
 2. View of past active instance sessions with their cost
 3. Automatic system hardware detection for determining accurate billing cost
 
