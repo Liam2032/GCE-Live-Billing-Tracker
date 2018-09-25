@@ -25,9 +25,9 @@ Feel free to let me know changes/additions to be made :)
 
 ### Install:
 
-1. Add following metadata key to your instance:
-Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh
-(where dir-of-file is full working directory of gceshutdown.sh)
+1. Add following metadata key to your instance:<br/>
+Key: shutdown-script, Value: sudo dir-of-file/gceshutdown.sh<br/>
+(where dir-of-file is full working directory of gceshutdown.sh)<br/>
 (information on how to do this here: https://cloud.google.com/compute/docs/shutdownscript)
 
 2. Run gcecost.sh script and follow prompts
