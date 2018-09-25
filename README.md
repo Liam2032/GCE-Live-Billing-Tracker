@@ -1,6 +1,6 @@
-## Google-Cloud-Engine-Billing-Tracker
+## GCE Billing Tracker
 
-This is a simple yet very useful bash script which automatically shows you the cost of a Google Cloud VM Compute instance live and accurately.
+This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
 
 What this includes is:
 1. Live cost tracking of an instance (based on current exchange rate) 
