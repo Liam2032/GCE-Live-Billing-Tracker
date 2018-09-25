@@ -11,6 +11,7 @@
 // TODO: other zones, preemptive hardware use. //
 
 <br/>
+<br/>
 
 This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
 
