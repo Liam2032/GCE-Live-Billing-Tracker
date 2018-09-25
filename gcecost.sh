@@ -30,13 +30,11 @@ find_gpu () {
     else
         if echo "$NSMI" | grep -q 'V100'; then
             echo "V100"
-        fi
-        if echo "$NSMI" | grep -q 'P100'; then
+        elif echo "$NSMI" | grep -q 'P100'; then
             echo "P100"
-        fi
-	    if echo "$NSMI" | grep -q 'K80'; then
-            echo "K80"
-	    fi
+        elif echo "$NSMI" | grep -q 'K80'; then
+    	    echo "K80"
+    	fi
     fi
 }
 
