@@ -8,7 +8,10 @@
 * GPU's: V100, P100, K80 <br/>
 * Storage: SSD, Standard provisioned 
 <br/>
-// TODO: other zones, preemptive hardware use. //
+
+<b> Future Additions: </b>
+* Other zone support
+* Preemptive hardware pricing
 
 <br/>
 <br/>
