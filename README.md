@@ -22,6 +22,7 @@ What this includes is:
 This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed. <br/>
 <b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
 <br/>
+<br/>
 Feel free to let me know changes/additions to be made :)
 <br/>
 ### Install:
