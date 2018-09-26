@@ -12,6 +12,7 @@
 <b> Future Additions: </b>
 * Other zone support
 * Preemptive hardware pricing
+* Google Drive storage for all instances tracking
 
 <br/>
 
