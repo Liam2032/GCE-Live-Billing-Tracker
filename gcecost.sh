@@ -81,7 +81,7 @@ gpu_costs () {
     if $verbose; then  
         echo "GPU Cost:              $"$cost
     else   
-        echo $cost
+        echo "$"$cost
     fi
     
 }
