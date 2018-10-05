@@ -34,7 +34,7 @@ Feel free to let me know changes/additions to be made :)
 1. Add following metadata key to your instance:
 
 Key: shutdown-script
-Value: sudo dir-of-file/gceshutdown.sh
+Value: sudo dir-of-file/gceshutdown.sh -s
 
 (where dir-of-file is full working directory of gceshutdown.sh, information on how to do this here: https://cloud.google.com/compute/docs/shutdownscript)
 
