@@ -8,7 +8,6 @@
 * GPU's: V100, P100, K80 <br/>
 * Storage: SSD, Standard provisioned 
 <br/>
-
 ### Features
 1. Integration with gdrive for live tracking accross all account VM's
 2. Show real-time cost of resources based on latest exchange rates and hardware costs
