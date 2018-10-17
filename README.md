@@ -9,21 +9,17 @@
 * Storage: SSD, Standard provisioned 
 <br/>
 
-<b> Future Additions: </b>
-* Other zone support
-* Preemptive hardware pricing
-* Google Drive storage for all instances tracking
+<b> Features: </b>
+1. Integration with gdrive for live tracking accross all account VM's
+2. Show real-time cost of resources based on latest exchange rates and hardware costs
+2. View all past or current VM billing sessions
+3. See what you are actually using and not estimate based off a 24-48hour delay!
 
 <br/>
 
-This is a simple yet very useful bash script which automatically shows you your current billing cost of a Google Cloud VM Compute instance live and accurately.
+This is a very useful bash script which automatically shows you your current billing cost of your Google Cloud VM Compute instances live and accurately.
 
-What this includes is:
-1. Live cost tracking of an instance (based on current exchange rate of chosen currency) 
-2. View of past active instance sessions with their cost
-3. Automatic system hardware detection for determining accurate billing cost
-
-This is very handy to ensure you don't go over your billing account especially since the billing usage shown by google is 24-48hours delayed. <br/>
+If you care about your money and want a live view of your usage, try this out! <br/>
 <b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
 <br/>
 <br/>
@@ -31,16 +27,12 @@ Feel free to let me know changes/additions to be made :)
 <br/>
 ### Install:
 ```
-1. Add following metadata key to your instance:
+1. Run gcecosts.sh. This will walk you though setup of gdrive, authentication and everything else.
 
-Key: shutdown-script
-Value: sudo dir-of-file/gceshutdown.sh -s
+3. After completed setup, you will have access to VM tracking and features.
 
-(where dir-of-file is full working directory of gceshutdown.sh, information on how to do this here: https://cloud.google.com/compute/docs/shutdownscript)
-
-2. Run gcecost.sh script and follow prompts
-
-3. Restart instance. Now, you can use 'gcecosts' command in terminal with options:
-   -v: Verbose mode
-   -r: Remove billing history
+Run: gcecosts [options]
+   [-v]: Verbose mode / print out detailed history and cost usage
+   [-s]: sync latest VM billing history from cloud to local instance / push current VM usage
+   [-r]: Reset environment
 ```
