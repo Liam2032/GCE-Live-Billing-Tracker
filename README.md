@@ -1,4 +1,4 @@
-## GCE Billing Tracker ** WITH GDRIVE SUPPORT
+## GCE Billing Tracker ** Now With GDRIVE Support!
 
 <i> Please note: still early work in progress, updating in progress </i>
 <br/>
