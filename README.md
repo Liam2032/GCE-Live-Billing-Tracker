@@ -9,7 +9,7 @@
 * Storage: SSD, Standard provisioned 
 <br/>
 
-<b> Features: </b>
+#### ** Features! **
 1. Integration with gdrive for live tracking accross all account VM's
 2. Show real-time cost of resources based on latest exchange rates and hardware costs
 2. View all past or current VM billing sessions
