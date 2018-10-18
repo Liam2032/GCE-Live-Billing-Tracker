@@ -38,8 +38,8 @@ verbose=false
 run_startup=false
 reset=false
 
-pwd=$HOME
-
+pwd=$(pwd)
+drive_pwd=$HOME
 while getopts svzr args; do
     case $args in
     s) save=true;;
@@ -52,7 +52,7 @@ done
 # -----------------------------------------
 
 get_gdrive() {
-    if [ ! -f $pwd/drive ]; then
+    if [ ! -f $drive_pwd/drive ]; then
         read -p "First time running this? [y/N]:  " new_run
 
         case "$new_run" in
@@ -61,10 +61,10 @@ get_gdrive() {
                 echo -e 'required. Please follow authentication link and sign into drive'
                 echo -e 'account you would like to use for cloud storage.\n'
                 sudo wget -q --no-check-certificate 'https://docs.google.com/uc?export=download&id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA' \
-                -O $pwd/drive && sudo chmod 777 $pwd/drive && $pwd/drive about
+                -O $drive_pwd/drive && sudo chmod 777 $drive_pwd/drive && $drive_pwd/drive about
                 ;;
             *)
-                echo "no gdrive file was found in location $pwd/drive. \
+                echo "no gdrive file was found in location $drive_pwd/drive. \
                 Ensure correct permissions are set and file is there."
                 exit 1
                 ;;
@@ -74,12 +74,12 @@ get_gdrive() {
 
 init_env() {
 
-    if [ ! -f $pwd/drive ]; then
+    if [ ! -f $drive_pwd/drive ]; then
         echo "***ERROR: gdrive not found. Please re-run with appropriate permissions. ***"
         exit 1
     fi
     instance_name=$(hostname)
-    drive="$pwd/drive"
+    drive="$drive_pwd/drive"
     
     bill_dir="/etc/init.d/gce_billing"
 
@@ -103,7 +103,7 @@ init_env() {
         read -p "Enter your currency for exchange rate (eg. USD, AUD): " currency
         
         printf "\nNow add this metadata custom key to this google cloud instance:\n\n"
-        printf "Key: 'shutdown-script'\nValue: 'sudo $pwd/${scrptname::-1} -z'\n"
+        printf "Key: 'shutdown-script'\nValue: 'sudo $pwd/$scrptname -z -s'\n"
         echo -e '\nThats it, you are all set! Run using: gce_billing [options].'
         echo -e 'Options: \n [-s] to pull/push latest billing copies'
         echo -e ' [-v] to view a verbose stdout output. \n\nNOTE: syncing from cloud will take place every 30MIN.\n'
@@ -139,7 +139,7 @@ init_env() {
         if [ -f $local_file ]; then
             eval "sudo touch $cron_file"
             eval "sudo chmod 777 $cron_file"
-            echo -e "#\0041/bin/bash\n/home/jack_caster2032/newsc.sh -s &> /dev/null" >> $cron_file
+            echo -e "#\0041/bin/bash\n$pwd/$scrptname -s &> /dev/null" >> $cron_file
         else
             echo "issue with creating local file. Needs to be fixed before continue."
         fi
@@ -457,7 +457,7 @@ if $reset; then
             $drive delete -r $gcedir_id
         fi
         echo "Deleted gdrive file"
-        eval "sudo rm $pwd/drive"
+        eval "sudo rm $drive_pwd/drive"
         echo "Deleted alias"
         grep -F -v 'alias gcecosts=' ~/.bashrc > ~/.bashrc.tmp && mv ~/.bashrc.tmp ~/.bashrc
     fi
