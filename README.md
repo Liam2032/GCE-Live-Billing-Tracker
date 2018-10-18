@@ -27,7 +27,7 @@ Feel free to let me know changes/additions to be made :)
 ### Install:
 ```
 1. Run gcecosts.sh. This will walk you though setup of gdrive, authentication and everything else.
-
+2. Important: setup will require you to add a shutdown Meta key for each VM. Please do this and follow instructions...
 3. After completed setup, you will have access to VM tracking and features.
 
 Run: gcecosts [options]
