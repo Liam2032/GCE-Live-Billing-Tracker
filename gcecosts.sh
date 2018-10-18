@@ -91,7 +91,7 @@
         remote_file="${bill_dir}/all_costs.log"
         
         if [ ! -f $local_file ] || [ ! -s $local_file ]; then
-            scrptname=$(basename -- "$0")'"'
+            scrptname=$(basename -- "$0")
             alias gcecosts=$pwd/$scrptname
             echo alias gcecosts="$pwd/$scrptname" >> ~/.bashrc
             cron_file="/etc/cron.hourly/${instance_name}-run-hourly"
