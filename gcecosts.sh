@@ -21,8 +21,7 @@
 
     *** ABORTED ***
     '
-        echo -e 'Exited program.  If issues persist, remove drive file 
-        \nand gce_billing directory to start fresh.' >&2
+        echo -e 'Exited program.  If issues persist, reset using [-r] option.' >&2
         exit 1
     }
 
