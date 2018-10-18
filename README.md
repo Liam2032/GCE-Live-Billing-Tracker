@@ -13,6 +13,7 @@
 2. View all past or current VM billing sessions
 3. Syncs automatically every 60 minutes. Pushes on shutdown final VM usage and pulls history from cloud.
 4. See what you are actually using and not estimate based off a 24-48hour delay!
+5. Calculates automatically from used system hardware what total cost of usage is per session.
 
 <br/>
 
