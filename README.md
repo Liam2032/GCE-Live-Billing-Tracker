@@ -7,7 +7,7 @@
 * Zones: asia-east-1<br/>
 * GPU's: V100, P100, K80 <br/>
 * Storage: SSD, Standard provisioned  <br/>
-#### Features
+##### Features
 1. Integration with gdrive for live tracking accross all account VM's
 2. Show real-time cost of resources based on latest exchange rates and hardware costs
 2. View all past or current VM billing sessions
