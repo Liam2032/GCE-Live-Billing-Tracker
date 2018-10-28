@@ -7,7 +7,7 @@
 * Zones: asia-east-1<br/>
 * GPU's: V100, P100, K80 <br/>
 * Storage: SSD, Standard provisioned  <br/>
-##### Features
+### Features
 1. Integration with gdrive for live tracking accross all account VM's
 2. Show real-time cost of resources based on latest exchange rates and hardware costs
 2. View all past or current VM billing sessions
@@ -20,7 +20,7 @@
 This is a very useful bash script which automatically shows you your current billing cost of your Google Cloud VM Compute instances live and accurately.
 
 If you care about your money and want a live view of your usage, try this out! <br/>
-<b> Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for </b>
+##### Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for.
 <br/>
 <br/>
 Feel free to let me know changes/additions to be made :)
