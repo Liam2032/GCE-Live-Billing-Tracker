@@ -20,8 +20,8 @@
 This is a very useful bash script which automatically shows you your current billing cost of your Google Cloud VM Compute instances live and accurately.
 
 If you care about your money and want a live view of your usage, try this out! <br/>
-<font size="4">
-<i> *Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for. </i></font>
+<text font-size="16">
+<i> *Please keep in mind costs such as Image storage, Snapshots or internet usage is not monitored and need to also be accounted for. </i></text>
 <br/>
 <br/>
 Feel free to let me know changes/additions to be made :)
